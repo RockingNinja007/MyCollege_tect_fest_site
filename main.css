@@ -1,0 +1,102 @@
+
+body {
+      position: relative; 
+  }
+  #glimps {padding-top:50px;color: #fff; background-color: #1E88E5;}
+  #event {color: #fff; background-color: #673ab7;}
+  #workshop {padding-top:50px;color: #fff; background-color: #ff9800;}
+  #glimps {padding-top:50px;color: #fff; background-color: #ff5000;}
+  #about_us {padding-top:50px;color: #fff; background-color: #fac800;}
+  
+  .page_banner{
+  	height: 100vh;
+  }
+
+  .section_content{
+  	vertical-align: middle;
+  }
+
+	.sec{
+		min-height: 100vh;
+		text-align: center;
+		position:relative;
+	}
+	.sec_no_padding{
+		padding: 0px;
+		background-color: #aaa;
+	}
+	.sec .section_image{
+		min-height: 40vh;
+	}
+	.sec .section_content{
+
+		font-family: 'A Year Without Rain'; 
+		min-height: 40vh;
+	}
+	.sec .section_gallary{
+		min-height: 50vh;
+		padding: 20px;
+	}
+
+	.section_gallary .slide_section{
+		min-height:50vh;
+		padding: 20px;
+		border-radius: 10px;
+		/*background-image: url("images/section_back1.png");*/
+	}
+	.slide_section img{
+		width: 100%;
+		margin:0px;
+		border:10px solid #fff;
+	}
+	@media screen and (max-width: 768px) {
+    	.logo {
+       	 font-size: 150px;
+    	}
+    	
+  	}
+  	@font-face{
+  		font-family: "demo";
+  		src= url("fonts/A Year WithoutRain.ttf");
+  	}
+	figure{
+		 background: rgba(0,0,0,0.4);
+		 border-radius: 10px;
+		 position: relative;
+	}
+
+	figcaption {
+		font-family: Baskerville, "Baskerville Old Face", Garamond, "Times New Roman", serif;
+		font-style: italic;
+		font-size: 2rem; padding: 0.8rem; color: #fff;
+	}
+
+	.parlax_back{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+	.parlax_front{
+		padding-top:50px;
+		background-color: #aaa;
+		background: rgba(0,0,0,0.6);
+		z-index: 1000;
+		min-height:100vh
+	}
+@font-face {
+	font-family: 'abaddon11';
+	src: url("fonts/Abaddon_ll_jeda.ttf");
+  }
+  
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
