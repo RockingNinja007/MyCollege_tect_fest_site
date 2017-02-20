@@ -1,0 +1,159 @@
+body{
+  padding: 0px;
+  background:url("../images/back5.jpg");
+}
+
+.r_panel {
+  min-height: 70vh;/* new size type */
+  align-content: center;
+  padding:0px;
+}
+
+.demo{
+  margin-bottom: 2%;
+  font-size: 18px;
+}
+
+.demo label{
+  float: left;
+  font-family: "Times New Roman";
+  color:#000;
+
+}
+.demo input{
+  float: right;
+  width: 100%;
+  font-weight: bold;
+  font-family: "Courier New";
+  box-shadow: none;
+  background: transparent;
+  color: #fff;
+}
+.demo select{
+  float: right;
+  width: 100%;
+  background: transparent;
+  color: #fff;
+  padding-left: 10%;
+  font-weight: bold;
+  font-family: "Courier New";
+}
+
+.demo select option{
+  padding-left: 10%
+  font-weight: bold;
+  font-family: "Courier New";
+  background: transparent;
+  color: #fff;
+}
+.demo_submit{
+  margin-top: 5%;
+
+}
+.demo_submit button{
+  box-shadow: 1px 1px 5px #333;
+
+}
+.demo_error{
+  visibility: hidden;
+  border-left: 5px solid red;
+  border-bottom: 1px solid red;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #ddd;
+  font-size: 1.2em
+}
+.demo_error label{
+  text-shadow: none;
+}
+
+#reg_form{
+  background-color: #aaa;
+}
+
+
+.reg_banner{
+  min-height: 20vh;
+  padding: 5vh;
+}
+.cont{
+  padding-top: 5vh;
+  background-color: #;
+  min-height: 70vh;
+}
+
+.event_links{
+  min-height: 100%;
+  width: 100%;
+  background-color: ;
+  padding-right: 20%;
+}
+.event_links a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.event_label{
+  font-size: 2.4em;
+  color: #fff;
+  font-family: "scratch";
+  text-decoration: underline;
+}
+.event_li{
+
+  padding: 10px;
+  padding-left: 10%;
+  font-size: 1.3em;
+  background-color: transparent;
+  font-family: "rain";
+  letter-spacing: 3px;
+  font-size: 1.2em;
+}
+.event_li:hover{
+  background-color: #71c0ee;
+  color: #555;
+
+}
+
+.event_title h4{
+  font-family: "scratch";
+  font-size: 3.5em;
+  color: #71c0ee;
+}
+.event_title p{
+  font-family: "rain";
+  letter-spacing: 2px;
+  color: #ccc;
+}
+.price_decl{
+  color: #71c0ee;
+  font-family: "scratch";
+  font-size: 2.5em;
+}
+.event_desc{
+  color: #fff;
+  font-family: "rain";
+  font-size: 1.3em;
+  letter-spacing: 2px;
+}
+
+.event_links ul li{
+  display: block;
+  color: #fff;
+}
+.sub_link li{
+  font-size: .9em;
+}
+
+ @font-face {
+font-family: "rain";
+src: url("fonts/AYearWithoutRain.ttf");
+}
+@font-face{
+  font-family: "adv";
+  src: url("fonts/Advent_Psychosis.ttf");
+}
+@font-face{
+  font-family: "scratch";
+  src: url("fonts/Scratch_I.ttf");
+}

@@ -1,37 +1,97 @@
-
 body {
-      position: relative; 
-  }
-  #glimps {padding-top:50px;color: #fff; background-color: #1E88E5;}
-  #event {color: #fff; background-color: #673ab7;}
-  #workshop {padding-top:50px;color: #fff; background-color: #ff9800;}
-  #glimps {padding-top:50px;color: #fff; background-color: #ff5000;}
-  #about_us {padding-top:50px;color: #fff; background-color: #fac800;}
-  
-  .page_banner{
-  	height: 100vh;
-  }
+      position: relative;
+  	}
 
-  .section_content{
-  	vertical-align: middle;
-  }
+	#glimps {padding-top:50px;color: #fff; }
+	#event {color: #fff; background-image: url("images/back6.jpg"); background-attachment: fixed;}
+	/*#workshop {padding-top:50px;color: #fff; background-color: #fff900;}*/
+	#glimps {padding-top:50px;color: #fff;}
+	#about_us {padding-top:50px;color: #fff;}
+	#contact{padding-top:50px;color: #fff;min-height: 100vh;background-image: url("images/back5.jpg");background-attachment: fixed;}
+
+	.page_banner{
+	  	min-height: 100vh;
+	  	position: relative;
+	  	background-image: url("images/back8.jpg");
+	  	background-attachment: fixed;
+	}
+
+
+	#banner_body{
+		width: 100%;
+		min-height: 100vh;
+		margin-top:50px;
+		text-align: center;
+		color: #fff;
+		padding: 10vh;
+		font-family: "adv";
+		font-size: 1em;
+	}
+
+	#banner_body h3{
+		font-size: 4em;
+	}
+	#banner_body h3 p{
+		font-size: 1em;
+		font-family: "scratch";
+	}
+
+	#banner_body h1{
+		font-size: 6rem;
+		color:#71c0ee;
+	}
+
+	#banner_body h4{
+
+		font-family: "adv";
+		font-size: 2em;
+	}
+	#banner_body h4 span{
+		font-family: "scratch";
+		font-size: 1.4em;
+	}
+
 
 	.sec{
 		min-height: 100vh;
 		text-align: center;
 		position:relative;
+		font-family: 'Rain';
 	}
 	.sec_no_padding{
 		padding: 0px;
 		background-color: #aaa;
 	}
 	.sec .section_image{
-		min-height: 40vh;
+		height: 40vh;
+	}
+	.sec .section_image img{
+		height: 40vh;
+
 	}
 	.sec .section_content{
 
-		font-family: 'A Year Without Rain'; 
-		min-height: 40vh;
+
+	}
+	.section_content h2{
+
+		color: #39f;
+		font-family: "scratch";
+			font-size: 3.5em;
+	}
+
+	.section_content h2 b{
+		font-family: "adv";
+		font-size: .8em;
+		color: #51f;
+	}
+
+	.section_content p{
+		color: #666;
+		padding-left: 20%;
+		padding-right: 20%;
+		font-family: "rain";
+		font-size: 1.3em;
 	}
 	.sec .section_gallary{
 		min-height: 50vh;
@@ -40,35 +100,12 @@ body {
 
 	.section_gallary .slide_section{
 		min-height:50vh;
-		padding: 20px;
-		border-radius: 10px;
+		padding: 2%;
 		/*background-image: url("images/section_back1.png");*/
 	}
 	.slide_section img{
 		width: 100%;
 		margin:0px;
-		border:10px solid #fff;
-	}
-	@media screen and (max-width: 768px) {
-    	.logo {
-       	 font-size: 150px;
-    	}
-    	
-  	}
-  	@font-face{
-  		font-family: "demo";
-  		src= url("fonts/A Year WithoutRain.ttf");
-  	}
-	figure{
-		 background: rgba(0,0,0,0.4);
-		 border-radius: 10px;
-		 position: relative;
-	}
-
-	figcaption {
-		font-family: Baskerville, "Baskerville Old Face", Garamond, "Times New Roman", serif;
-		font-style: italic;
-		font-size: 2rem; padding: 0.8rem; color: #fff;
 	}
 
 	.parlax_back{
@@ -78,16 +115,135 @@ body {
 	}
 	.parlax_front{
 		padding-top:50px;
+		padding-bottom: 100px;
 		background-color: #aaa;
 		background: rgba(0,0,0,0.6);
 		z-index: 1000;
-		min-height:100vh
+		min-height:100vh;
 	}
-@font-face {
-	font-family: 'abaddon11';
-	src: url("fonts/Abaddon_ll_jeda.ttf");
+
+
+	.parlax_front div h2{
+		font-family: "scratch";
+		font-size: 3.5em;
+	}
+	.parlax_front div h2 b{
+
+		font-family: "adv";
+		color: #51f;
+	}
+	.parlax_front div p{
+		font-family: "rain";
+		font-size: 1.3em;
+	}
+
+	.event_tag_thumb{
+		min-height: 120px;
+		height: 10vh;
+		width: 10vh;
+		min-width: 120px;
+		float: left;
+		margin:10px;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.event_tag_thumb div{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		background-color: rgba(0,0,0,0.8);
+		bottom: 0px;
+		margin: 0px;
+		animation-name: fade_out;
+		opacity: 0;
+		animation-duration: 1s;
+		border-radius: 10px;
+		border:2px solid #fff;
+	}
+	.event_tag_thumb div p{
+		font-size: 1em;
+		position: absolute;
+		top:40%;
+		width: 100%;
+	}
+	.event_tag_thumb div:hover{
+		animation-name: fade_in;
+		opacity: 1;
+		animation-duration: 1s;
+	}
+
+	@media screen and (max-width: 768px) {
+    	.logo {
+       	 font-size: 150px;
+    	}
+
+  	}
+
+	figure{
+		 color: #888;
+		 position: relative;
+	}
+
+	figcaption {
+
+		font-family: Baskerville, "Baskerville Old Face", Garamond, "Times New Roman", serif;
+		font-style: italic;
+		font-size: 1rem;
+		padding: 0.8rem;
+		 color: #333;
+	}
+	figcaption p{
+	font-size: 	1.3rem;
+	}
+
+.contact_caption{
+	margin-bottom: 10vh;
+}
+.contact_caption div h2{
+	font-family: "scratch";
+	color:;
+	font-size: 3.5em;
+}
+.contact_caption div p{
+	font-size: 1.3em;
+}
+#contact_form{
+	margin-top: 10vh;
+}
+
+#contact_form div{
+	padding: 2vh;
+}
+#contact_form div .form-control{
+	background: rgba(0,0,0,0.3);
+	color: #fff;
+	box-shadow: none;
+}
+
+
+
+
+footer{
+	height: 50px;
+	background-color: #000;
+}
+
+
+ @font-face {
+	font-family: "rain";
+	src: url("fonts/AYearWithoutRain.ttf");
   }
-  
+  	@font-face{
+  		font-family: "adv";
+  		src: url("fonts/Advent_Psychosis.ttf");
+  	}
+  	@font-face{
+  		font-family: "scratch";
+  		src: url("fonts/Scratch_I.ttf");
+  	}
+
   .slideanim {visibility:hidden;}
   .slide {
       animation-name: slide;
@@ -100,3 +256,22 @@ body {
     0% {
       opacity: 0;
       transform: translateY(70%);
+  }
+}
+
+ @keyframes fade_in{
+ 	from{
+ 		opacity: 0;
+ 	}
+ 	to{
+ 		opacity: 1;
+ 	}
+ }
+  @keyframes fade_out{
+ 	from{
+ 		opacity: 1;
+ 	}
+ 	to{
+ 		opacity: 0;
+ 	}
+ }
