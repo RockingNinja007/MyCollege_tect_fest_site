@@ -83,7 +83,7 @@ body{
 }
 
 .event_links{
-  min-height: 100%;
+  min-height: 100vh;
   width: 100%;
   background-color: ;
   padding-right: 20%;
@@ -136,6 +136,14 @@ body{
   font-size: 1.3em;
   letter-spacing: 2px;
 }
+.event_desc li{
+
+  color: #fff;
+  font-family: "rain";
+  font-size: 1.3em;
+  letter-spacing: 2px;
+}
+
 
 .event_links ul li{
   display: block;

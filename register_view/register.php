@@ -49,18 +49,48 @@ $participants_registry_error =array(1=>"Name not valid. Try full name",2=>"Roll 
 		}
 	</script>
 </head>
-<body>
+<body style="padding-bottom:100px;">
 
+  <!-- navbar codding -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+  	<div class="container" >
+  	<div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#myPage" style="padding: 0px;"><img src="../logo.png" height="100%" width="100%"></a>
+      </div>
+  	 <div class="collapse navbar-collapse" id="myNavbar">
+  		<ul class="nav navbar-nav navbar-right">
+  	      <li><a href="../"><span class="glyphicon glyphicon-lamp"></span> Home</a></li>
+  	      <li><a href="../#glimps"><span class="glyphicon glyphicon-picture"></span> Glimps</a></li>
+  	      <li><a href="../#event"><span class="glyphicon glyphicon-flag"></span> Events</a></li>
+  	     <!-- <li><a href="#workshop"><span class="glyphicon glyphicon-education"></span> Team</a></li>-->
+  	       <li><a href="../#about_us"><span class="glyphicon glyphicon-sunglasses"></span> Credits</a></li>
+  	      <li><a href="../#contact"><span class="glyphicon glyphicon-education"></span> Contact</a></li>
+  	    </ul>
+    	</div>
+    	</div>
+  </nav>
 <?php //print_r($get_event);
 //echo $query;?>
 	<!--<div class="reg_banner">
 		<div style=""></div>
 	</div>-->
 <!-- Sidebar coding starts here -->
-	<div id="bomb" class="cont" >
-		<div class="col-lg-4 col-md-4 col-sm-4" >
+	<div id="bomb" class="cont" style="padding-top:100px;margin-bottom:100px;">
+		<div class="col-lg-4 col-md-4 col-sm-4">
 			 <div class="event_links">
 			 	<b><div class="event_label">Select your poison</div><b>
+
+          <a href="#bomb" onclick="showthis('lan');"><div class="event_li">Lan Gaming ></div></a>
+ 			 		<ul id="lan" class="sub_link" style="display: none;">
+ 			 			<a href ="register.php?event_name='Counter Strike'"><li class="event_li">Counter Strike</li></a>
+ 			 			<a href ="register.php?event_name='NFS'"><li class="event_li">NFS</li></a>
+ 			 		</ul>
+
 			 	<a href="#bomb" onclick="showthis('Robo');"><div class="event_li">Robotics ></div></a>
 			 		<ul id="Robo" class="sub_link" style="display: none;">
 			 			<a href ="register.php?event_name='Robo Soccer'"><li class="event_li"> Robo Soccer</li></a>
@@ -71,10 +101,16 @@ $participants_registry_error =array(1=>"Name not valid. Try full name",2=>"Roll 
 			 	<!--<a href="register.php?event_name=''"><div class="event_li">Model Presentation</div></a>-->
 			 	<a href="#bomb" onclick="showthis('stratum');"><div class="event_li">Stratum ></div></a>
 			 		<ul id="stratum" class="sub_link" style="display: none;">
-			 			<a href ="register.php?event_name='Nirmaan'"><li class="event_li">Nirman,</li></a>
+			 			<a href ="register.php?event_name='Nirmaan'"><li class="event_li">Nirman</li></a>
 			 			<a href ="register.php?event_name='Setu'"><li class="event_li">Setu</li></a>
 			 		</ul>
-        <a href="register.php?event_name='Parikalpana'"><div class="event_li">Parikalpana</div></a>
+
+        <a href="#bomb" onclick="showthis('pari');"><div class="event_li">Parikalpana ></div></a>
+        <ul id="pari" class="sub_link" style="display: none;">
+          <a href ="register.php?event_name='Model Presentation'"><li class="event_li">Model Presentation</li></a>
+          <a href="register.php?event_name='Project Exhibition'"><li class="event_li">Project Exhibition</li></a>
+        </ul>
+
 			 	<a href="#bomb" onclick="showthis('hash');"><div class="event_li">Hashmap ></div></a>
 			 		<ul id="hash" class="sub_link" style="display: none;">
 			 			<a href ="register.php?event_name='Graphic Designing'"><li class="event_li">Graphic design</li></a>
@@ -94,16 +130,23 @@ $participants_registry_error =array(1=>"Name not valid. Try full name",2=>"Roll 
 
 				<div class="event_title col-lg-10 col-md-10 col-sm-10 col-xs-10" style="background-color: #">
 					<h4><?php echo $get_event[0]["event_name"]; ?></h4><p>&nbsp;&nbsp;&nbsp;&nbsp;
-            <?php echo " at ".$get_event[0]["event_date"]." at ".$get_event[0]["venue"] ; ?>
+            <?php echo $get_event[0]["event_date"]." at ".$get_event[0]["venue"] ; ?>
           </p>
 				</div>
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 price_decl">
 					<p>1<sup>st</sup> Price : <?php echo $get_event[0]["first_price"]; ?>/- &nbsp;
-            2<sup>nd</sup> Price : <?php echo $get_event[0]["second_price"]; ?>/-</p>
+            <?php if($get_event[0]["second_price"]!=0){
+              echo "  2<sup>nd</sup> Price :".$get_event[0]["second_price"]."/-";
+            }?></p>
 				</div>
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 event_desc">&nbsp;&nbsp;&nbsp;&nbsp;
             <?php echo $get_event[0]["event_desc"]; ?>
         </div>
+
+        <!--<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 class="price_decl">General Instruction</h1>
+            <p class="event_desc">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $get_event[0]["rules"]; ?></p>
+        </div>-->
 			</div>
       <!-- sidebar coding ends here -->
 
@@ -164,11 +207,22 @@ $participants_registry_error =array(1=>"Name not valid. Try full name",2=>"Roll 
 				</center>
 
 			</div>
+
+      <!--<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h1 class="price_decl">General Instruction</h1>
+          <p class="event_desc">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $get_event[0]["rules"]; ?></p>
+      </div>-->
+
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h1 class="price_decl">For more details contact :</h1>
+          <p class="event_desc">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $get_event[0]["contact"]; ?></p>
+      </div>
 		</div>
     <!-- event registration ends here -->
+
 	</div>
 
-	<div style="height: 100px;">&nbsp;</div>
+	<div  class="col-lg-12"style="height: 100px;">&nbsp;</div>
 
 	<script type="text/javascript">
 		$(function() {

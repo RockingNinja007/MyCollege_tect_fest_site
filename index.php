@@ -22,11 +22,11 @@
 
 </style>
 
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="myPage">
 
 
 
-<nav class="navbar navbar-inverse navbar-fixed-top" >
+<nav class="navbar navbar-default navbar-fixed-top" >
 	<div class="container" >
 	<div class="navbar-header">
        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -111,40 +111,46 @@
 			</p>
  		</div>
  		<div class="container-fluid" style=" display:flex;display:-webkit-flex;flex-wrap:wrap;-webkit-flex-wrap:wrap;justify-content:center;-webkit-justify-content: center;margin-top: 10vh;">
-
-	 		<div class="event_tag_thumb slideanim">
+			<!-- gamming link -->
+	 		<a href ="register_view/register.php?event_name='Counter Strike'"><div class="event_tag_thumb slideanim">
  				<img src="images/thumbs/gaming.png" height="100%" width="100%">
  				<div><p>Gaming</p></div>
-
-	 		</div>
-	 		<div class="event_tag_thumb slideanim">
+			</div></a>
+			<!-- robotics link -->
+	 		<a href ="register_view/register.php?event_name='Robo Soccer'"><div class="event_tag_thumb slideanim">
  				<img src="images/thumbs/robotics.png" height="100%" width="100%">
  				<div><p>Robotics</p></div>
-	 		</div>
-	 		<div class="event_tag_thumb slideanim">
+	 		</div></a>
+			<!-- jugaad link -->
+	 		<a href="register_view/register.php?event_name='Jugaad'"><div class="event_tag_thumb slideanim">
  				<img src="images/thumbs/jugaad.png" height="100%" width="100%">
  				<div><p>Jugaad</p></div>
-	 		</div>
-	 		<div class="event_tag_thumb slideanim">
+	 		</div></a>
+			<!-- Parikalpana link -->
+	 		<a href="register_view/register.php?event_name='Parikalpana'"><div class="event_tag_thumb slideanim">
  				<img src="images/thumbs/presentation.png" height="100%" width="100%">
- 				<div><p>Model Presentation</p></div>
-	 		</div>
-	 		<div class="event_tag_thumb slideanim">
+ 				<div><p>Parikalpana</p></div>
+	 		</div></a>
+			<!-- Stratum link -->
+	 		<a href ="register_view/register.php?event_name='Nirmaan'"><div class="event_tag_thumb slideanim">
  				<img src="images/thumbs/stratum.png" height="100%" width="100%">
  				<div><p>Stratum</p></div>
-	 		</div>
-	 		<div class="event_tag_thumb slideanim">
+	 		</div></a>
+			<!-- hashmap link -->
+	 		<a href ="register_view/register.php?event_name='Graphic Designing'"><div class="event_tag_thumb slideanim">
  				<img src="images/thumbs/hashmap.png" height="100%" width="100%">
  				<div><p>Hashmap</p></div>
-	 		</div>
-	 		<div class="event_tag_thumb slideanim">
+	 		</div></a>
+			<!-- e-strategy link -->
+	 		<a href="register_view/register.php?event_name='E-Strategy'"><div class="event_tag_thumb slideanim">
  				<img src="images/thumbs/estrategy.png" height="100%" width="100%">
  				<div><p>E-Strategy</p></div>
-	 		</div>
-	 		<div class="event_tag_thumb slideanim">
+	 		</div></a>
+			<!-- quiz link -->
+	 		<a href="register_view/register.php?event_name='Quiz'"><div class="event_tag_thumb slideanim">
  				<img src="images/thumbs/quiz.png" height="100%" width="100%">
  				<div><p>Quiz-Q</p></div>
-	 		</div>
+	 		</div></a>
 
  		</div>
  		<div style="min-height: 15vh;color: white">
