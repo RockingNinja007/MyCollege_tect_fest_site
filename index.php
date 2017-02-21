@@ -52,9 +52,9 @@
 
 <!-- boody of the page strats here -->
 <div id="home" class="page_banner">
-	<div id="banner_body" class="">
+	<div id="banner_body">
 		<center>
-			<h3>Govt. Engineering College Raipur <p>presents for the first time</p></h3><br>
+			<h3>Govt. Engineering College <br>Raipur <p>presents for the first time</p></h3><br>
 			<h1>Avesh 2k17</h1>
 			<h4>Celebration <span>of </span>Creation</h4><br>
 			<!--<h4><span>Let's</span> celebrate Together</h4>-->
@@ -102,9 +102,7 @@
 </div>
 
 <div id="event" class="container-fluid sec sec_no_padding">
- 	<div class="parlax_back">
- 		<img src="images/back.png" width="100%" height="100%">
- 	</div>
+
  	<div class="parlax_front col-lg-12 col-md-12 col-sm-12 col-xs-12">
  		<div style="min-height: 15vh;color: white">
 	 		<h2 class="slideanim">Events in <b>Avesh 2k17</b></h2>

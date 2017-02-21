@@ -53,12 +53,12 @@ $participants_registry_error =array(1=>"Name not valid. Try full name",2=>"Roll 
 
 <?php //print_r($get_event);
 //echo $query;?>
-	<div class="reg_banner">
-		<div style="">A</div>
-	</div>
+	<!--<div class="reg_banner">
+		<div style=""></div>
+	</div>-->
 <!-- Sidebar coding starts here -->
 	<div id="bomb" class="cont" >
-		<div class="col-lg-4 col-md-4 col-sm-4">
+		<div class="col-lg-4 col-md-4 col-sm-4" >
 			 <div class="event_links">
 			 	<b><div class="event_label">Select your poison</div><b>
 			 	<a href="#bomb" onclick="showthis('Robo');"><div class="event_li">Robotics ></div></a>
@@ -124,7 +124,7 @@ $participants_registry_error =array(1=>"Name not valid. Try full name",2=>"Roll 
                 </label>
 					  		</div>
 
-					  		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 demo ">
+					  	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 demo ">
 					  		 	<!--<label>Participant's Name</label><br>-->
 								<input type="text" name="name"  class="form-control" placeholder="Participent's Name" required>
 					  		</div>
@@ -168,7 +168,7 @@ $participants_registry_error =array(1=>"Name not valid. Try full name",2=>"Roll 
     <!-- event registration ends here -->
 	</div>
 
-	<div style="height: 10vh;">&nbsp;</div>
+	<div style="height: 100px;">&nbsp;</div>
 
 	<script type="text/javascript">
 		$(function() {

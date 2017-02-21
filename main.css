@@ -1,19 +1,21 @@
 body {
       position: relative;
+
   	}
 
-	#glimps {padding-top:50px;color: #fff; }
-	#event {color: #fff; background-image: url("images/back6.jpg"); background-attachment: fixed;}
+	#glimps {padding-top:50px;color: #fff;width: 100%;}
+	#event {color: #fff; background-image: url("images/back6.jpg"); background-attachment: fixed;width: 100%;}
 	/*#workshop {padding-top:50px;color: #fff; background-color: #fff900;}*/
-	#glimps {padding-top:50px;color: #fff;}
-	#about_us {padding-top:50px;color: #fff;}
-	#contact{padding-top:50px;color: #fff;min-height: 100vh;background-image: url("images/back5.jpg");background-attachment: fixed;}
+	#glimps {padding-top:50px;color: #fff;width: 100%;}
+	#about_us {padding-top:50px;color: #fff;width: 100%;}
+	#contact{padding-top:50px;color: #fff;min-height: 100vh;width: 100%;background-image: url("images/back5.jpg");background-attachment: fixed;}
 
 	.page_banner{
 	  	min-height: 100vh;
 	  	position: relative;
 	  	background-image: url("images/back8.jpg");
 	  	background-attachment: fixed;
+
 	}
 
 
@@ -275,3 +277,24 @@ footer{
  		opacity: 0;
  	}
  }
+
+
+
+@media (max-width:750px) {
+  #banner_body{
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width:400px) {
+
+  #banner_body{
+    font-size: 0.6em;
+  }
+
+  #banner_body{
+
+    padding:0px;
+    padding-top: 40px;
+  }
+}
