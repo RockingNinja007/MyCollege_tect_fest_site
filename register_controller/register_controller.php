@@ -12,7 +12,7 @@
    if(strlen($participants_name) <=4){
       header("Location:../register_view/register.php?registry_msg=1");
     }
-    else if(!(strlen($participants_roll) >= 10 && strlen($participants_roll)<=13)){
+    else if(!(strlen($participants_roll)<=13)){
       header("Location:../register_view/register.php?registry_msg=2");
       //echo strlen($participants_roll) ;
     }

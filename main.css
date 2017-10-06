@@ -8,7 +8,7 @@ body {
 	/*#workshop {padding-top:50px;color: #fff; background-color: #fff900;}*/
 	#glimps {padding-top:50px;color: #fff;width: 100%;}
 	#about_us {padding-top:50px;color: #fff;width: 100%;}
-	#contact{padding-top:50px;color: #fff;min-height: 100vh;width: 100%;background-image: url("images/back5.jpg");background-attachment: fixed;}
+	#contact{padding-top:50px;color: #fff;min-height: 100vh;width: 100%;background-color: #fff;background-attachment: fixed;}
 
 	.page_banner{
 	  	min-height: 100vh;
@@ -201,20 +201,28 @@ body {
 	}
 
 .contact_caption{
-	margin-bottom: 10vh;
 }
 .contact_caption div h2{
 	font-family: "scratch";
-	color:;
+	color:#71c0ee;
 	font-size: 3.5em;
 }
 .contact_caption div p{
 	font-size: 1.3em;
+  color:#444;
 }
 #contact_form{
 	margin-top: 10vh;
 }
 
+.form-control{
+  background-color: #fff !important;
+  color: #555 !important;
+  letter-spacing: 1px;
+}
+.btn{
+
+}
 #contact_form div{
 	padding: 2vh;
 }
@@ -298,3 +306,4 @@ footer{
     padding-top: 40px;
   }
 }
+

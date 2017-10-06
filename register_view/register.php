@@ -28,8 +28,8 @@ $participants_registry_error =array(1=>"Name not valid. Try full name",2=>"Roll 
   	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
   	<link rel="stylesheet" type="text/css" href="../main.css">
     <link rel="stylesheet" type="text/css" href="../css/register_page.css">
-  	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
   	<script src="../js/jquery_offline.js"></script>
+  	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<style>
 
@@ -140,22 +140,30 @@ $participants_registry_error =array(1=>"Name not valid. Try full name",2=>"Roll 
             }?></p>
 				</div>
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 event_desc">&nbsp;&nbsp;&nbsp;&nbsp;
-            <?php echo $get_event[0]["event_desc"]; ?>
+            <?php echo $get_event[0]["event_desc"]; ?><br>
+            <?php 
+                if($get_event[0]["rules"]){
+                   echo "for more details press <a href=".$get_event[0]["rules"].">here....</a>";
+                }
+             ?>    
         </div>
-
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h1 class="price_decl">For more details contact :</h1>
+          <p class="event_desc">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $get_event[0]["contact"]; ?></p>
+      </div>
         <!--<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <h1 class="price_decl">General Instruction</h1>
             <p class="event_desc">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $get_event[0]["rules"]; ?></p>
         </div>-->
-			</div>
+    </div>
       <!-- sidebar coding ends here -->
 
       <!--form section starts here -->
 
-			<div class="form_panel col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top:50px">
-				<center>
-					  	<form id="" class="" method="post" action="<?php echo "../register_controller/register_controller.php?register_to=".$get_event[0]["register_in"]; ?>">
-					  		<!--hidden label -->
+			<div class="form_panel col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top:50px;color:#fff;font-family:'rain';font-size:1.3em;letter-spacing:2px">
+			 <!--	<center>
+					 	<form id="" style="z-index:1000" class="" method="post" action="<?php echo "../register_controller/register_controller.php?register_to=".$get_event[0]["register_in"]; ?>">
+					  		<!--hidden label 
 					  		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 demo demo_error"<?php if(!isset($_REQUEST["registry_msg"])){echo "style='display:none;'";}else{echo "style='display:block;'";}?>>
 					  		 <label style="color: red">
                   <?php
@@ -168,15 +176,15 @@ $participants_registry_error =array(1=>"Name not valid. Try full name",2=>"Roll 
 					  		</div>
 
 					  	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 demo ">
-					  		 	<!--<label>Participant's Name</label><br>-->
+					  		 	<!--<label>Participant's Name</label><br>
 								<input type="text" name="name"  class="form-control" placeholder="Participent's Name" required>
 					  		</div>
 							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 demo">
-								<!--<label>College Name</label><br>-->
+								<!--<label>College Name</label><br>
 								<input type="text" name="clg_name"  class="form-control" placeholder="Your College Name" required>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 demo">
-								<!--<label>Roll number</label><br>-->
+								<!--<label>Roll number</label><br>
 								<input type="text" name="roll_no"  class="form-control" placeholder="Your Roll Number" required>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 demo">
@@ -203,8 +211,14 @@ $participants_registry_error =array(1=>"Name not valid. Try full name",2=>"Roll 
 							<div class="col-lg-12 col-md-12 col-sm-12col-xs-12 demo_submit">
 								<button class="btn btn-info" style="width: 40%">Submit</button>
 							</div>
-					  	</form>
-				</center>
+					  	</form> -->
+
+                                       Online Registration for this event has been halted. For registration please contact any of  the following.<br><br>
+                                              <span style="font-family:'scratch';font-size:1.8em;color: #71c0ee;">Saket Sahu</span> : 9179419833<br> 
+                                              <span style="font-family:'scratch';font-size:1.8em;color: #71c0ee;">Abhinaw Jagtap</span> :9752032709<br>
+                                              <span style="font-family:'scratch';font-size:1.8em;color: #71c0ee;">Vasu Verma</span> :7587119039<br><br>
+                                           We are sorry for any kind of inconvenience.
+			<!--	</center>-->
 
 			</div>
 
@@ -213,10 +227,7 @@ $participants_registry_error =array(1=>"Name not valid. Try full name",2=>"Roll 
           <p class="event_desc">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $get_event[0]["rules"]; ?></p>
       </div>-->
 
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <h1 class="price_decl">For more details contact :</h1>
-          <p class="event_desc">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $get_event[0]["contact"]; ?></p>
-      </div>
+     
 		</div>
     <!-- event registration ends here -->
 

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>AVESH | HOMEOAGE	</title>
+	<title>AVESH | HOMEPAGE	</title>
 	<meta charset="utf-8">
  	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   	<link rel="stylesheet" type="text/css" href="main.css">
-  	<script type="text/javascript" src="js/bootstrap.min.js"></script>
   	<script src="js/jquery_offline.js"></script>
+  	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -42,7 +42,7 @@
 	      <li><a href="#glimps"><span class="glyphicon glyphicon-picture"></span> Glimps</a></li>
 	      <li><a href="#event"><span class="glyphicon glyphicon-flag"></span> Events</a></li>
 	     <!-- <li><a href="#workshop"><span class="glyphicon glyphicon-education"></span> Team</a></li>-->
-	       <li><a href="#about_us"><span class="glyphicon glyphicon-sunglasses"></span> Credits</a></li>
+	       <!--<li><a href="#about_us"><span class="glyphicon glyphicon-sunglasses"></span> Credits</a></li>-->
 	        <li><a href="register_view/register.php?event_name='Robo Soccer'"><span class="glyphicon glyphicon-send"></span> Register</a></li>
 	      <li><a href="#contact"><span class="glyphicon glyphicon-education"></span> Contact</a></li>
 	    </ul>
@@ -70,32 +70,32 @@
 	<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 section_content slideanim" style="min-height: 40vh;">
 		<h2 class="">Glimpses of <b>Avesh 2k17</b></h2>
 		<p class="">None of disovery, innovation can be faded ever in our everyday life .
-		We at GEC-R are celebrating these ideas, discoveries, innovations in most enthusiastic and passonate manner.
+		We at GEC-R are celebrating these ideas, discoveries, innovations in most enthusiastic and passionate manner.
 		</p>
 	</div>
 	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 section_gallary slideanim">
 		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 slide_section">
 			<figure class="">
 				<img class="img-responsive" src="images/g1.jpg">
-				<figcaption><h4>Chief Guest<h4><p>this is the demo description </p></figcaption>
+				<figcaption><h4>Creation<h4><p>“Play it once for old times' sake. Play it twice to not forsake. And play it thrice if you cannot fake. Joyous life is your to take. You always get what you make.” </p></figcaption>
 			</figure>
 		</div>
 		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 slide_section">
 			<figure class="">
 				<img class="img-responsive" src="images/g2.jpg">
-				<figcaption><h4>Entertainment<h4><p>this is the demo description ..dont take it seriously</p></figcaption>
+				<figcaption><h4>Enjoy<h4><p>“ The noblest pleasure is the joy of Understanding.The pleasantest things in the world are pleasant thoughts: and the great art of life is to have as many of them as possible.”</p></figcaption>
 			</figure>
 		</div>
 		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 slide_section">
 			<figure class="">
-				<img class="img-responsive" src="images/g3.jpg">
-				<figcaption><h4>Dedication<h4><p>this is the demo description ..dont take it seriously</p></figcaption>
+				<img class="img-responsive" src="images/g3.png">
+				<figcaption><h4>Dedication<h4><p>“ Genius is one percent inspiration, ninety-nine percent perspiration.”</p></figcaption>
 			</figure>
 		</div>
 		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 slide_section">
 			<figure class="">
 				<img class="img-responsive" src="images/g4.jpg">
-				<figcaption><h4>Tech Fest<h4><p>this is the demo description ..dont take it seriously</p></figcaption>
+				<figcaption><h4>Tech Fest<h4><p>“ Avesh is all about us, Ordinary People, Celebrating Extraordinary Beauty of Creation.”</p></figcaption>
 			</figure>
 		</div>
 	</div>
@@ -106,8 +106,8 @@
  	<div class="parlax_front col-lg-12 col-md-12 col-sm-12 col-xs-12">
  		<div style="min-height: 15vh;color: white">
 	 		<h2 class="slideanim">Events in <b>Avesh 2k17</b></h2>
-			<p class="slideanim">None of disovery, innovation can be faded ever in our everyday life .
-			We at GEC-R are celebrating these ideas, discoveries, innovations in most enthusiastic and passonate manner.
+			<p class="slideanim">None of discovery, innovation can be faded ever in our everyday life .
+			We at GEC-R are celebrating these ideas, discoveries, innovations in most enthusiastic and passionate manner.
 			</p>
  		</div>
  		<div class="container-fluid" style=" display:flex;display:-webkit-flex;flex-wrap:wrap;-webkit-flex-wrap:wrap;justify-content:center;-webkit-justify-content: center;margin-top: 10vh;">
@@ -156,64 +156,22 @@
  		<div style="min-height: 15vh;color: white">
 	 		<h2 class="slideanim">Terms and Conditions</h2>
 			<p>
-				<ul class="slideanim">
-					<li>Point 1 dknlsnvlsnvls nd lsn lslns snl snl snn lsnvsldlnsl nsdvl snnslvsnvnsldn nvna'sdn asno avn</li>
-					<li>Point 2 sdnvsknvlsnlvnksllsnvlslvsnslvn dj ps dsn lsi sdnlvndspmpvsn vdpsl sn slispn nda nn v</li>
+				<ul class="slideanim" style=""font-size:2em;letter-spacing:1px">
+					<li>Events in Avesh 2k17 is classified into 2 categories namely "Individual Events" and "Group Events"</li>
+					<li>General registration fee for each categories will be accepted with the scheme "PAY ONCE PART ALL"</li>
+                                       <li>General fee for Individual Events is 100/- </li>
+                                      <li>General fee for Group Events is 100/- (per person).</li>
 				</ul>
 			</p>
  		</div>
  	</div>
 </div>
 
-<!--<div id="workshop" class="container-fluid sec">
-  <div class="container-fluid">
-  <h1>Workshop</h1>
-  <p>We are encoraging the knowledge for better .We have more than 7 emerging aspects of science engineering to enligh</p>
-  </div>
-</div>-->
-<div id="about_us" class="container-fluid sec">
-  <div class="contact_caption col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-		<div class="section_content">
-	 		<h2 class="slideanim">Supporting Team of <b>Avesh 2k17<b></h2>
-			<p class="slideanim">
-				This event would have been nothing without the support of these peoples. We thank all these guys for their hard work and true dedication in making this event worderfully exciting and sucessfull.
-			</p>
- 		</div>
-	</div>
-
-	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 section_gallary">
-		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 slide_section">
-			<figure class="slideanim">
-				<img class="img-responsive" src="images/back.png">
-				<figcaption><h4>Vasu<h4><p></p></figcaption>
-			</figure>
-		</div>
-		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 slide_section">
-			<figure class="slideanim">
-				<img class="img-responsive" src="images/back.png">
-				<figcaption><h4>Sandeep Sahu<h4><p>this is the demo description ..dont take it seriously</p></figcaption>
-			</figure>
-		</div>
-		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 slide_section">
-			<figure class="slideanim">
-				<img class="img-responsive" src="images/back.png">
-				<figcaption><h4>Utkarsh Jha<h4><p>this is the demo description ..dont take it seriously</p></figcaption>
-			</figure>
-		</div>
-		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 slide_section">
-			<figure class="slideanim">
-				<img class="img-responsive" src="images/back.png">
-				<figcaption><h4>demo name<h4><p>The most important and most dedicated banda of all</p></figcaption>
-			</figure>
-		</div>
-	</div>
-
-</div>
 
 <div id="contact" class="container-fluid sec">
 	<div class="contact_caption col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		<div>
-	 		<h2 class="slideanim">Get in Touch with Us</h2>
+	 		<h2 class="slideanim" style="color:71c0ee">Get in Touch with Us</h2>
 			<p class="slideanim">None of disovery, innovation can be faded ever in our everyday life .
 			We at GEC-R are celebrating these ideas, discoveries, innovations in most enthusiastic and passonate manner.
 			</p>
@@ -235,7 +193,7 @@
   	<div col-lg-12>
   		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-2"></div>
   		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-8">
-  			<input class="btn form-control" style="letter-spacing: 1.01em; background-color: #71c0ee;color: black;font-weight: bold;" type="submit" name="submit" value="submit"/>
+  			<input class="btn btn-primary" style="letter-spacing: 3px; background-color: #71c0ee;color: black;font-weight: bold;" type="submit" name="submit" value="submit"/>
   		</div>
   		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-2"></div>
   	</div>
@@ -246,9 +204,6 @@
 <!-- body of the page ends here -->
 
 <!-- footer starts here -->
-<footer>
-	ns,vn,
-</footer>
 <!-- footer ends here -->
 <script>
 

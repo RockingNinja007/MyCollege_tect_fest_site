@@ -4,10 +4,10 @@
 	class Application
 	{
 		function __construct(){
-			$server_name = "localhost";
-			$user_name = "root";
-			$pass="";
-			$database = "avesh";
+			$server_name = "sql204.byethost7.com";
+			$user_name = "b7_19710776";
+			$pass="raipur2017";
+			$database = "b7_19710776_avesh";
 
       $this->dbConnect = new mysqli($server_name, $user_name, $pass,$database);
 
